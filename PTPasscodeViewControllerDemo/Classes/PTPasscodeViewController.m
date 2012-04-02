@@ -237,7 +237,6 @@
         NSInteger tag = [currentPanel tag];
         UITextField *tf = (UITextField*)[currentPanel viewWithTag:tag + index];
        // NSLog(@"%@ - %@ - %@, %d, %d", string, [textField text], passcode, tag, index);
-         
         if ([self.delegate respondsToSelector:@selector(shouldChangePasscode:panelView:passCode:lastNumber:)]) {
             if([self.delegate shouldChangePasscode:self panelView:currentPanel passCode:[passcode intValue] lastNumber:[string intValue]]) {
                 [tf setText:string];
