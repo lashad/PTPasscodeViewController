@@ -3,9 +3,7 @@
 //  PTPasscodeViewControllerDemo
 //
 //  Created by Lasha Dolidze on 7/7/10.
-//  Copyright Picktek LLC 2010. All rights reserved.
-//  Distributed under GPL license v 2.x or later	 	
-//  http://www.gnu.org/licenses/gpl-2.0.html
+//  Distributed under MIT license
 //
 
 #import <UIKit/UIKit.h>
@@ -54,8 +52,13 @@
 
 @protocol PTPasscodeViewControllerDelegate <NSObject>
 @optional
-- (BOOL)shouldChangePasscode:(PTPasscodeViewController *)passcodeViewController panelView:(UIView*)panelView passCode:(NSUInteger)passCode lastNumber:(NSInteger)lastNumber;
-- (void)didShowPasscodePanel:(PTPasscodeViewController *)passcodeViewController panelView:(UIView*)panelView;
-- (BOOL)didEndPasscodeEditing:(PTPasscodeViewController *)passcodeViewController panelView:(UIView*)panelView passCode:(NSUInteger)passCode;
+- (BOOL)shouldChangePasscode:(PTPasscodeViewController *)passcodeViewController 
+                   panelView:(UIView*)panelView passCode:(NSUInteger)passCode 
+                  lastNumber:(NSInteger)lastNumber;
+- (void)didShowPasscodePanel:(PTPasscodeViewController *)passcodeViewController 
+                   panelView:(UIView*)panelView;
+- (BOOL)didEndPasscodeEditing:(PTPasscodeViewController *)passcodeViewController 
+                    panelView:(UIView*)panelView 
+                     passCode:(NSUInteger)passCode;
 
 @end
