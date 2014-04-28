@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6A5C89F5-E549-4A55-9326-39FB2A61DA70</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PTPasscodeViewControllerDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E7C98E52-056D-4192-BE4A-2BBF6E01DE0D</key>
+		<string>ssh://github.com/OkySabeni/PTPasscodeViewController.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PTPasscodeViewControllerDemo/PTPasscodeViewControllerDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E7C98E52-056D-4192-BE4A-2BBF6E01DE0D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/OkySabeni/PTPasscodeViewController.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E7C98E52-056D-4192-BE4A-2BBF6E01DE0D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7C98E52-056D-4192-BE4A-2BBF6E01DE0D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PTPasscodeViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
