@@ -15,17 +15,6 @@
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
 
-
-#pragma mark -
-
-- (void)dealloc 
-{
-    [_window release];
-    [_navigationController release];
-    
-    [super dealloc];
-}
-
 #pragma mark -
 #pragma mark Application lifecycle
 
@@ -46,9 +35,6 @@
     
     [window addSubview:[navController view]];
     [window makeKeyAndVisible];
-    
-    [window release];
-    [navController release];
     
     return TRUE;
 }

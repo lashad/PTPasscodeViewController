@@ -39,7 +39,7 @@
     UITextField *textField = [[UITextField alloc] initWithFrame:textFieldFrame];
     [textField setBorderStyle:UITextBorderStyleBezel];
     [textField setTextColor:[UIColor blackColor]];
-    [textField setTextAlignment:UITextAlignmentCenter];
+    [textField setTextAlignment:NSTextAlignmentCenter];
     [textField setFont:[UIFont systemFontOfSize:41]];
     [textField setTag:tag];
     [textField setSecureTextEntry:YES];
@@ -58,31 +58,25 @@
     
     UITextField *textField = [self createPasscodeEntry:CGRectMake(rect.origin.x + 25.0, 60.0, kPasscodeEntryWidth, kPasscodeEntryHeight) tag:tagIndex + 1];
     [panelView addSubview:textField];
-    [textField  release];
     
     textField = [self createPasscodeEntry:CGRectMake(rect.origin.x + 95.0, 60.0, kPasscodeEntryWidth, kPasscodeEntryHeight) tag:tagIndex + 2];
     [panelView addSubview:textField];
-    [textField  release];
     
     textField = [self createPasscodeEntry:CGRectMake(rect.origin.x + 165.0, 60.0, kPasscodeEntryWidth, kPasscodeEntryHeight) tag:tagIndex + 3];
     [panelView addSubview:textField];
-    [textField  release];
     
     textField = [self createPasscodeEntry:CGRectMake(rect.origin.x + 235.0, 60.0, kPasscodeEntryWidth, kPasscodeEntryHeight) tag:tagIndex + 4];
     [panelView addSubview:textField];
-    [textField  release];    
-    
     
     // Create title
     CGRect labelFrame = CGRectMake(rect.origin.x + 25.0, 22.0, kPasscodeEntryWidth * 4 + 30, 30.0);
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     [label setTag:kPasscodePanelTitleTag];
     [label setFont:[UIFont boldSystemFontOfSize:15]];
-    [label setTextAlignment:UITextAlignmentCenter];    
+    [label setTextAlignment:NSTextAlignmentCenter];
     [label setTextColor:[UIColor colorWithRed:66.0/255.0 green:85.0/255.0 blue:102.0/255.0 alpha:1.0]];
     [label setBackgroundColor:[UIColor clearColor]];
     [panelView addSubview:label];
-    [label release];
 
     // Create summary
     labelFrame = CGRectMake(rect.origin.x + 25.0, 130.0, kPasscodeEntryWidth * 4 + 30, 40.0);
@@ -91,11 +85,10 @@
     [label setFont:[UIFont boldSystemFontOfSize:12]];
     [label setNumberOfLines:0];
     [label setBaselineAdjustment:UIBaselineAdjustmentNone];
-    [label setTextAlignment:UITextAlignmentCenter];    
+    [label setTextAlignment:NSTextAlignmentCenter];
     [label setTextColor:[UIColor colorWithRed:66.0/255.0 green:85.0/255.0 blue:102.0/255.0 alpha:1.0]];
     [label setBackgroundColor:[UIColor clearColor]];
     [panelView addSubview:label];
-    [label release];
     
     return panelView;
 }
@@ -136,19 +129,16 @@
     UIView *panelView = [self createPanel:CGRectMake(0.0, 0.0, kPasscodePanelWidth, kPasscodePanelHeight) tagIndex:kPasscodePanelOne];
     [_scrollView addSubview:panelView];
     [self switchPanel:kPasscodePanelOne];
-    [panelView release];
     // -------------------------------------------
     
     // Create Panel Two
     panelView = [self createPanel:CGRectMake(kPasscodePanelWidth, 0.0, kPasscodePanelWidth, kPasscodePanelHeight) tagIndex:kPasscodePanelTwo];
     [_scrollView addSubview:panelView];
-    [panelView release];
     // -------------------------------------------
 
     // Create Panel Three
     panelView = [self createPanel:CGRectMake(kPasscodePanelWidth * 2, 0.0, kPasscodePanelWidth, kPasscodePanelHeight) tagIndex:kPasscodePanelThree];
     [_scrollView addSubview:panelView];
-    [panelView release];
     // -------------------------------------------
  
     // Create frake input text
@@ -158,7 +148,6 @@
     [textField setHidden:YES];
     textField.keyboardType = UIKeyboardTypeNumberPad;
     [self.view addSubview:textField];
-    [textField release];
     [textField becomeFirstResponder];
     // -------------------------------------------
     
@@ -304,14 +293,6 @@
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
 }
-
-
-- (void)dealloc {
-    [_scrollView release];
-
-    [super dealloc];
-}
-
 
 @end
 

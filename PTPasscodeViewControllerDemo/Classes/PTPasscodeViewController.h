@@ -34,7 +34,7 @@
     UIView *_scrollView;
     UIView *currentPanel;
     
-    id<PTPasscodeViewControllerDelegate> _delegate;
+    __unsafe_unretained id<PTPasscodeViewControllerDelegate> _delegate;
     
 }
 @property (nonatomic, readonly) UILabel *titleLabel;
