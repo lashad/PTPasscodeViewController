@@ -39,7 +39,7 @@
     UITextField *textField = [[UITextField alloc] initWithFrame:textFieldFrame];
     [textField setBorderStyle:UITextBorderStyleBezel];
     [textField setTextColor:[UIColor blackColor]];
-    [textField setTextAlignment:UITextAlignmentCenter];
+    [textField setTextAlignment:NSTextAlignmentCenter];
     [textField setFont:[UIFont systemFontOfSize:41]];
     [textField setTag:tag];
     [textField setSecureTextEntry:YES];
@@ -73,7 +73,7 @@
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     [label setTag:kPasscodePanelTitleTag];
     [label setFont:[UIFont boldSystemFontOfSize:15]];
-    [label setTextAlignment:UITextAlignmentCenter];    
+    [label setTextAlignment:NSTextAlignmentCenter];
     [label setTextColor:[UIColor colorWithRed:66.0/255.0 green:85.0/255.0 blue:102.0/255.0 alpha:1.0]];
     [label setBackgroundColor:[UIColor clearColor]];
     [panelView addSubview:label];
@@ -85,7 +85,7 @@
     [label setFont:[UIFont boldSystemFontOfSize:12]];
     [label setNumberOfLines:0];
     [label setBaselineAdjustment:UIBaselineAdjustmentNone];
-    [label setTextAlignment:UITextAlignmentCenter];    
+    [label setTextAlignment:NSTextAlignmentCenter];
     [label setTextColor:[UIColor colorWithRed:66.0/255.0 green:85.0/255.0 blue:102.0/255.0 alpha:1.0]];
     [label setBackgroundColor:[UIColor clearColor]];
     [panelView addSubview:label];
